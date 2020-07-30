@@ -1,7 +1,12 @@
-import helloWorld from './helloWorld';
+import React, { Fragment } from 'react';
+import ReactDOM from 'react-dom';
+import { BrowserRouter } from 'react-router-dom';
 
-function testHelloWorld() {
-  document.body.innerHTML = helloWorld;
-}
+import App from './components/App';
 
-testHelloWorld();
+ReactDOM.render(
+  <BrowserRouter>
+    <App />
+  </BrowserRouter>,
+  document.getElementById('root')
+);
